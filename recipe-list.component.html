@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-12">
+        <!-- <button class="btn btn-success">New Recipe</button> -->
+    </div>
+</div>
+<hr>
+<div class="img-thumbnail" alt="Cinque Terre">
+    <div class="col-xs-12 text-white text-bold text-truncate " style="font-size: 15px;">
+        <app-recipe-item class="rounded-circle" alt="Cinque Terre" *ngFor="let item of recipes"[recipe]="item"(recipeSelected)="onRecipeSelected(item)"></app-recipe-item>
+    </div>
+</div>
